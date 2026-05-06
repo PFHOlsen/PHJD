@@ -9,12 +9,13 @@ Prepint available [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=637
 
 ## Dependencies
 This project requires the following R packages:
+- matrixdist
 - Rcpp
 - RcppArmadillo
   
 Install them with:
 ```r
-install.packages(c("Rcpp", "RcppArmadillo"))
+install.packages(c("matrixdist","Rcpp", "RcppArmadillo"))
 ``` 
 ## Setup
 **1.** Source `HE_EM.cpp`, `PHJD.cpp`.\
