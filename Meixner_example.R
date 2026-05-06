@@ -21,7 +21,7 @@ Rcpp::sourceCpp("HE_EM.cpp")
 a <- 0.3977   # a > 0
 b <- -1.4940  # -pi < b < pi
 d <- 0.3462   # d > 0
-m <- 0        # m any real numbers
+m <- 0        # m any real number
 
 # Lower limits for support of references measures
 # Choose A strictly larger than their maximum
