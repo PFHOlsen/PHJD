@@ -2,12 +2,16 @@
 # Example: HEJD fit to Meixner process #########################################
 ################################################################################
 
+# Install dependencies
+install.packages(c("matrixdist","Rcpp", "RcppArmadillo"))
+
+# Load packages
+library(matrixdist)
+
 # Source C++ code
 Rcpp::sourceCpp("PHJD.cpp")
 Rcpp::sourceCpp("HE_EM.cpp")
 
-# Load packages
-library(matrixdist)
 
 ################################################################################
 # Model setup ##################################################################
@@ -17,7 +21,7 @@ library(matrixdist)
 a <- 0.3977   # a > 0
 b <- -1.4940  # -pi < b < pi
 d <- 0.3462   # d > 0
-m <- 0        # M any real numbers
+m <- 0        # m any real numbers
 
 # Lower limits for support of references measures
 # Choose A strictly larger than their maximum
