@@ -85,8 +85,6 @@ arma::mat extract_submatrix(arma::mat A,
                   col_start + block_size - 1);
 }
 
-// Numeric integration ////
-
 double inf_norm(arma::mat A) {
   double value{0.0};
   
@@ -927,6 +925,7 @@ std::vector<double> X_dens_equi(const std::vector<double>& x,
   return dens_vals;
 }
 
+// Grid for numerical Romberg integration
 // [[Rcpp::export]]
 std::vector<double> Romberg_grid(double x_min,
                                  double x_max,
@@ -971,6 +970,7 @@ std::vector<std::vector<double>> Romberg_table(const std::vector<double>& f_vals
   return R;
 }
 
+// Computation of Kullback-Leibler divergence by Romgerg integraion
 // [[Rcpp::export]]
 double KL_Romberg(const std::vector<double>& x_grid,
                   const std::vector<double>& f_target,
