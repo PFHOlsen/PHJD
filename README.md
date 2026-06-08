@@ -1,5 +1,5 @@
 # PHJD
-Numerical methods from: Fitting Financial Phase-Type Jump Diffusions
+Numerical methods from: Fitting Financial Phase-Type Jump Diffusions. \
 Prepint available [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6377820).
 
 ## Files
